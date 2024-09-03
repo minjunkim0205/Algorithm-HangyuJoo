@@ -1,4 +1,4 @@
-# 💻 Algorithm-JoohanGyu
+# 💻 Algorithm-HangyuJoo
 
 ## Preview
 
