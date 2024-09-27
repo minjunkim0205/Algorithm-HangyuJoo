@@ -1,3 +1,5 @@
+import src.BinaryTree;
+
 public class Assignment01BinaryTree {
     /* Field */
     private Assignment01BinaryTreeNode root;
@@ -11,7 +13,7 @@ public class Assignment01BinaryTree {
         this.root = new Assignment01BinaryTreeNode(data);
     }
 
-    Assignment01BinaryTree(Assignment01BinaryTree left_tree, String data, Assignment01BinaryTree right_tree) {
+    Assignment01BinaryTree(BinaryTree left_tree, String data, BinaryTree right_tree) {
         this.root = new Assignment01BinaryTreeNode(left_tree.root, data, right_tree.root);
     }
 
@@ -20,16 +22,16 @@ public class Assignment01BinaryTree {
         return (this.root == null);
     }
 
-    public Assignment01BinaryTree leftSubTree() {
+    public BinaryTree leftSubTree() {
         if (this.root != null && this.root.left_child != null) {
-            return new Assignment01BinaryTree(this.root.left_child.data);
+            return new BinaryTree(this.root.left_child.data);
         }
         return null;
     }
 
-    public Assignment01BinaryTree rightSubTree() {
+    public BinaryTree rightSubTree() {
         if (this.root != null && this.root.right_child != null) {
-            return new Assignment01BinaryTree(this.root.right_child.data);
+            return new BinaryTree(this.root.right_child.data);
         }
         return null;
     }
